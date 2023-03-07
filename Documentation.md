@@ -8,7 +8,7 @@ Library:init() -- this is VERY important to add right under the loadstring
 
 ## Creating a Window
 ```lua
-local Window = library.NewWindow({
+local Window = Library.NewWindow({
   title = "Octohook", -- title
   size = UDim2.new(0, 500, 0.7, 20.7) -- size
   })
@@ -136,7 +136,7 @@ Section:AddList(
 ## Inserting Pre Made Settings Tab
 
 ```lua
-local SettingsTab = library:CreateSettingsTab(menu)
+local SettingsTab = Library:CreateSettingsTab(menu)
 ```
 
 ## Adding Themes
@@ -149,4 +149,11 @@ Section:AddList(
        callback = function()
        end
    }
-)```
+)
+```
+
+## Getting your Cheat/Game name specified at the library loadstring
+```lua
+local cheatname = library.cheatname
+local gamename = library.gamename
+```
