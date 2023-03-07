@@ -11,7 +11,7 @@ Library:init() -- this is VERY important to add right under the loadstring
 local Window = Library.NewWindow({
   title = "Octohook", -- title
   size = UDim2.new(0, 500, 0.7, 20.7) -- size
-  })
+})
 ```
 
 ## Creating a Tab
