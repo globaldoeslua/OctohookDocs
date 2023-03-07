@@ -1,13 +1,17 @@
+# Main Functions
+
 ## Getting Loadstring
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/cueshut/saves/main/octohook%20ui%20lib"))({cheatname = "", gamename = ""})
+library:init() -- this is VERY important to add right under the loadstring
 ```
 
 ## Creating Window
 ```lua
 local Window = library.NewWindow({
-title = "Octohook", -- title
-size = UDim2.new(0, 500, 0.7, 20.7)}) -- size
+  title = "Octohook", -- title
+  size = UDim2.new(0, 500, 0.7, 20.7) -- size
+  })
 ```
 
 ## Creating a Tab
@@ -51,7 +55,8 @@ Section:AddToggle(
            end
        end
    }
-)```
+)
+```
 
 ## Creating a Button
 
@@ -95,7 +100,8 @@ Section:AddButton(
            end
        end
    }
-)```
+)
+```
 
 ## Creating a ColorPicker
 
@@ -108,7 +114,8 @@ Section:AddColor(
             print(Color)
        end
    }
-)```
+)
+```
 
 ## Creating a Dropdown
 
@@ -118,6 +125,27 @@ Section:AddList(
        text = "List",
        flag = "",
        values = "1", "2", "3",
+       callback = function()
+       end
+   }
+)
+```
+
+# Miscellaneous
+
+## Inserting Pre Made Settings Tab
+
+```lua
+local SettingsTab = library:CreateSettingsTab(menu)
+```
+
+## Adding Themes
+```lua
+Section:AddList(
+   {
+       text = "List",
+       flag = "",
+       values = themeStrings,
        callback = function()
        end
    }
