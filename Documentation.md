@@ -16,7 +16,7 @@ local Window = Library.NewWindow({
 
 ## Creating a Tab
 ```lua
-local Tab = menu:AddTab("Tab") -- tab name
+local Tab = Window:AddTab("Tab") -- tab name
 ```
 
 ## Creating a Section
@@ -145,7 +145,7 @@ Section:AddList(
    {
        text = "List",
        flag = "",
-       values = themeStrings,
+       values = themeStrings, -- dont worry about the error
        callback = function()
        end
    }
@@ -154,6 +154,6 @@ Section:AddList(
 
 ## Getting your Cheat/Game name specified at the library loadstring
 ```lua
-local cheatname = library.cheatname
-local gamename = library.gamename
+local cheatname = Library.cheatname
+local gamename = Library.gamename
 ```
