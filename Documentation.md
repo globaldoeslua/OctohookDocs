@@ -6,7 +6,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/cuesh
 Library:init() -- this is VERY important to add right under the loadstring
 ```
 
-## Creating Window
+## Creating a Window
 ```lua
 local Window = library.NewWindow({
   title = "Octohook", -- title
