@@ -3,7 +3,7 @@
 ## Getting Loadstring
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/cueshut/saves/main/octohook%20ui%20lib"))({cheatname = "", gamename = ""})
-library:init() -- this is VERY important to add right under the loadstring
+Library:init() -- this is VERY important to add right under the loadstring
 ```
 
 ## Creating Window
