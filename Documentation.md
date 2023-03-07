@@ -69,7 +69,8 @@ Section:AddButton(
            Print("Button")
        end
    }
-)```
+)
+```
 
 ## Creating a Keybind
 
