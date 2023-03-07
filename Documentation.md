@@ -33,7 +33,8 @@ Section:AddBox({
   callback = function(Text)
       print(Text)
   end
-})```
+})
+```
 
 ## Creating a Toggle
 
